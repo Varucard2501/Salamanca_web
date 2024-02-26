@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+font-size: large;
+}
+
+
+/* ESTILOS A CARROUSEL / NOVEDAD */
+@media (min-width: 768px) {
+  .carousel-item img {
+    max-height: 80vh;
+    /* Establece la altura máxima al 80% de la altura visible del viewport */
+    object-fit: contain;
+    /* Ajusta el tamaño de la imagen manteniendo su relación de aspecto */
+  }
+}
+
+/* Cambiar el color de fondo de los botones del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: none;
+  /* Cambia el color de fondo a rojo */
+}
+
+/* Cambiar el color de las flechas de los botones del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  /* Cambia el color de las flechas a blanco */
+}
+
+
+/* Estilo Carrousel / Novedad - fondo a la versión de escritorio */
+.desktop-image {
+  background-color: black;
+  /* Aplica un fondo negro */
+}
+
+/* Estilos para la caption personalizada */
+.custom-caption {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  transform: translateX(312%);
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid black;
+  max-width: 20%;
+  max-height: 25%;
+  text-align: left;
+  display: inline-block;
+}
+
+/* FIN ESTILOS "CARROUSEL / NOVEDAD" */
+
+
+/* ESTILOS DE NOTICIAS */
+.noticias {
+  text-align: center;
+  /* Centra el texto horizontalmente */
+}
+
+.carousel-item {
+  padding: 20px;
+}
+
+
+/* ESTILOS OTROS TÍTULOS*/
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  /* Alinea los elementos al inicio del contenedor */
+}
+
+.card-container h2 {
+  width: 100%;
+  /* Asegura que el título ocupe todo el ancho del contenedor */
+  text-align: center;
+  /* Centra el texto horizontalmente */
+  margin-bottom: 20px;
+  /* Espacio entre el título y las tarjetas */
+}
+
+/* ESTILOS CATÁLOGO */
+
+.catalogo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
