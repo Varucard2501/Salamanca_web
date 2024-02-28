@@ -11,6 +11,11 @@ h1 {
 font-size: large;
 }
 
+/* Estilos a la barra NAV / HEADER */
+navbar navbar-expand-lg bg-body-tertiary fixed-top {
+  margin-bottom: 1rem;
+}
+
 
 /* ESTILOS A CARROUSEL / NOVEDAD */
 @media (min-width: 768px) {
@@ -20,6 +25,11 @@ font-size: large;
     object-fit: contain;
     /* Ajusta el tamaño de la imagen manteniendo su relación de aspecto */
   }
+}
+
+/* Estilos a la sección Novedad */
+.novedad {
+  margin-top: 3rem; /* Separa esta sección del Header */
 }
 
 /* Cambiar el color de fondo de los botones del carrusel */
@@ -94,6 +104,13 @@ font-size: large;
 /* ESTILOS CATÁLOGO */
 
 .catalogo {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ---------------------------------------- ESTILOS PÁGINA: CATÁLOGO ---------------------------------------*/
+
+.catalogo_main {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
