@@ -1,80 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título 01: El Cuarto Hijo</title>
+    <title>Título: El Cuarto Hijo</title>
+
+    <!-- Estilos Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- Javascript-->
-    <script src="script.js"></script>
+    <script src="../script/script.js"></script>
 
     <!-- Fuentes Web -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+
 
 </head>
 
 <body>
 
-    <!-- Header, adentro va la barra de nav-->
-
+    <!-- "Header / Barra de navegación" -->
     <header>
-        <div id="sticky-navbar" class="navbar sticky">
-
-            <div class="navbar-logo" id="logo">
-                <a href="#">
-                    <img src="../images/logo_70px.png" alt="Logo">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="../images/logo_70px.png" alt="Logo" width="30" height="30"
+                        class="d-inline-block align-text-top">
                 </a>
-            </div>
-
-            <div class="navbar-buttons">
-                <a href="../index.html">
-                    <button class="navbar-button">Home</button>
-                </a>
-                <a href="/pages/catalogo.html">
-                    <button class="navbar-button">Catálogo</button>
-                </a>
-                <a href="/pages/que_es.html">
-                    <button class="navbar-button">¿Qué es Salamanca Cómics?</button>
-                </a>
-                <a href="pages/contacto.html">
-                    <button class="navbar-button">Contacto</button>
-                </a>
-                <a href=" " class="fas fa-shopping-bag">
-                    <img src="../images/baseline_shopping_bag_white_24dp.png">
-                </a>
-
-            </div>
-        </div>
-    </header>
-
-    <!-- Main -->
-
-    <main>
-        <section class="section1">
-            <div class="sub-section1">
-                <div class="image-gallery">
-                    <img src="../images/cuarto_cover.jpg" alt="Image 1">
-                    <img src="../images/el_cuarto_hijo/EL CUARTO HIJO0001.jpg" alt="Image 2">
-                    <img src="../images/el_cuarto_hijo/EL CUARTO HIJO0002.jpg" alt="Image 3">
-                    <img src="../images/el_cuarto_hijo/EL CUARTO HIJO0003.jpg" alt="Image 4">
-                    <img src="../images/el_cuarto_hijo/EL CUARTO HIJO0004.jpg" alt="Image 5">
-                    <img src="../images/el_cuarto_hijo/EL CUARTO HIJO0005.jpg" alt="Image 6">
+                <!-- Título -->
+                <h1 class="navbar-brand">Salamanca Cómics</h1>
+                <!-- Botón de alternancia para dispositivos móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Contenido del menú de navegación -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav flex-grow-1"> <!-- Utiliza flex-grow-1 -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="catalogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quienes_somos.html">¿Quiénes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="sub-section2">
-                <h1 class="title">El Cuarto Hijo: </h1>
-                <p class="description">Sinopsis: “El Cuarto Hijo” es una adaptación de Valentín Lerena (guión) y Roberto
+        </nav>
+    </header>
+    <!-- Fin del "Header" -->
+
+    <!-- Main / Título y Descripción del libro -->
+
+    <main class="titulo_main">
+        <h2>El Cuarto Hijo</h2>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="popup popup-1">
+                        <img class="img-fluid" alt="Pop Up Gallery"
+                            src="../images/el_cuarto_hijo/00/EL CUARTO HIJO0001.jpg" onclick="openModal(this)" />
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="popup popup-2">
+                        <img class="img-fluid" alt="Pop Up Gallery"
+                            src="../images/el_cuarto_hijo/00/EL CUARTO HIJO0002.jpg" onclick="openModal(this)" />
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="popup popup-3">
+                        <img class="img-fluid" alt="Pop Up Gallery"
+                            src="../images/el_cuarto_hijo/00/EL CUARTO HIJO0003.jpg" onclick="openModal(this)" />
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="popup popup-4">
+                        <img class="img-fluid" alt="Pop Up Gallery"
+                            src="../images/el_cuarto_hijo/00/EL CUARTO HIJO0004.jpg" onclick="openModal(this)" />
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="popup popup-5">
+                        <img class="img-fluid" alt="Pop Up Gallery"
+                            src="../images/el_cuarto_hijo/00/EL CUARTO HIJO0005.jpg" onclick="openModal(this)" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="img01">
+        </div>
+
+    </main>
+
+    <!-- Sección "Featured y comprar" -->
+    <section class="comprar_novedad">
+        <div class="card text-center">
+            <div class="card-header">
+                Sinopsis:
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">"El Cuarto Hijo"</h3>
+                <p class="card-text">“El Cuarto Hijo” es una adaptación de Valentín Lerena (guión) y Roberto
                     Fontana (dibujo) del texto homónimo de Liliana Bodoc, perteneciente al libro “Oficio de Buhos”
                     (2012) y enmarcado a su vez dentro de la “Saga de los Confines”. En dicho relato se cuentan los
                     primeros pasos en la vida de Drimus, personaje destinado a convertirse en un poderoso hechicero,
-                    enviado a conquistar y someter a los pueblos de los Confines..</p>
+                    enviado a conquistar y someter a los pueblos de los Confines.</p>
                 <ul class="list">
                     <li>Autores: Lerena (guion) - Fontana (dibujo)</li>
                     <li>Edición: Libro digital.</li>
@@ -82,49 +129,119 @@
                     <li>Color: Blanco y negro.</li>
                     <li>Temáticas: Horror, Medieval, Sobrenatural.</li>
                 </ul>
-                <button class="button">Comprar ahora</button>
-
-
-                <section id="section03">
-
-                    <div class="otros_titulos">
-                        <div class="titulo"><img src="../images/cuarto_cover.jpg" alt="">
-                            <h3>El Cuarto Hijo</h3>
-                            <a href="pages/titulo_01.html">
-                                <button>¡Comprar ahora!</button>
-                            </a>
-                        </div>
-                        <div class="titulo"><img src="../images/dagon_cover.jpg" alt="">
-                            <h3>Dagón</h3><button>¡Comprar ahora!</button>
-                        </div>
-                        <div class="titulo"><img src="../images/dejame_cover.jpg" alt="">
-                            <h3>Dejame Entrar</h3><button>¡Comprar ahora!</button>
-                        </div>
-                        <div class="titulo"><img src="../images/laburantes_cover.jpg" alt="">
-                            <h3>Laburantes</h3><button>¡Comprar ahora!</button>
-                        </div>
-
-                    </div>
-
-                </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer">
-            <div class="footer_logo">
-                <a href=".">
-                    <img src="../images/logo_70px.png" alt="logo">
-                </a>
+                <a href="#" class="btn btn-primary">¡Comprar ahora!</a>
             </div>
-            <div class="footer_copyrights">
-                <p>Web desarrollada por Valentín Lerena.<br>© Salamanca Cómics, Argentina, 2024.</p>
+            <div class="card-footer text-body-secondary">
+                ¡Éxito mundial!
+            </div>
+        </div>
+    </section>
+    <!-- Fin de la Sección "Featured y comprar"-->
+
+
+    <!-- Sección "Otros títulos" -->
+    <section class="otros_titulos">
+        <div class="container">
+            <h2 class="text-center">Otros títulos:</h2>
+            <div class="row">
+                <!-- Tarjeta 1 -->
+                <div class="col-md-3">
+                    <div class="card mb-3">
+                        <img src="../images/dagon/dagon_cover.jpg" class="card-img-top" alt="Dagón tapa">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <h5 class="card-title">Dagón</h5>
+                            <p class="card-text">Cuando Adriana empieza a trabaja en una sórdida planta pescado
+                                descubre un horroroso culto a antiguos dioses del mar.</p>
+                            <a href="#" class="btn btn-primary">¡Comprar ahora!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="col-md-3">
+                    <div class="card mb-3">
+                        <img src="../images/dejame_entrar/dejame_cover.jpg" class="card-img-top"
+                            alt="Dejame Entrar tapa">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <h5 class="card-title">Dejame Entrar</h5>
+                            <p class="card-text">Dona es una ama de casa aburrida y perturbada que lucha por
+                                contener
+                                sus más oscuros
+                                deseos.</p>
+                            <a href="#" class="btn btn-primary">¡Comprar ahora!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="col-md-3">
+                    <div class="card mb-3">
+                        <img src="../images/laburantes/laburantes_cover.jpg" class="card-img-top" alt="Laburantes tapa">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <h5 class="card-title">laburantes</h5>
+                            <p class="card-text">Historias potentes de los pequeños héroes anónimos que recorren la
+                                ciudad buscándose
+                                la vida.</p>
+                            <a href="#" class="btn btn-primary">¡Comprar ahora!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="col-md-3">
+                    <div class="card mb-3">
+                        <img src="../images/mujeres_fuego/m_d_f_cuadrado.jpg" class="card-img-top"
+                            alt="Mujeres de fuego tapas">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <h5 class="card-title">Mujeres de Fuego</h5>
+                            <p class="card-text">Tres mujeres en medio de la selva misionera aguardan el regreso del
+                                hombre que trae
+                                consigo el amor y el horror.</p>
+                            <a href="#" class="btn btn-primary">¡Comprar ahora!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin de la sección "Otros títulos" -->
+
+    <!-- Sección "Ir al catálogo"-->
+    <section class="catalogo">
+        <div class="card-container">
+            <button type="button" class="btn btn-primary btn-lg">Ir al Catálogo</button>
+        </div>
+    </section>
+    <!-- Sección "Ir al catálogo"-->
+
+
+    <!-- "Footer"-->
+    <footer class="bg-body-tertiary text-dark">
+        <div class="container py-4">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6">
+                    <div class="footer_logo text-center text-md-start">
+                        <a href="#">
+                            <img src="../images/logo_70px.png" alt="logo" class="img-fluid" width="30" height="30">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer_copyrights text-center text-md-end">
+                        <p class="mb-0">Web desarrollada por Valentín Lerena.<br>© Salamanca Cómics, Argentina,
+                            2024.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
+    <!-- Fin del "Footer"-->
 
-
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
