@@ -1,0 +1,13 @@
+$color-primario: #ff0000; // Define una variable llamada color-primario y le asigna el valor rojo
+
+$ancho-contenedor: 960px; // Define una variable llamada ancho-contenedor y le asigna el valor de 960px
+
+.boton {
+  background-color: $color-primario; // Utiliza la variable color-primario como color de fondo
+  color: #fff; // Establece el color del texto en blanco
+  padding: 10px 20px; // Establece el relleno del botón
+  font-size: 16px; // Establece el tamaño de la fuente del botón
+  border: none; // Elimina el borde del botón
+  border-radius: 5px; // Agrega esquinas redondeadas al botón
+  cursor: pointer; // Cambia el cursor al pasar sobre el botón
+}
