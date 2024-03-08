@@ -1,0 +1,52 @@
+/* ESTILOS A CARROUSEL / NOVEDAD */
+@media (min-width: 768px) {
+  .carousel-item img {
+    max-height: 80vh;
+    /* Establece la altura máxima al 80% de la altura visible del viewport */
+    object-fit: contain;
+    /* Ajusta el tamaño de la imagen manteniendo su relación de aspecto */
+  }
+}
+
+/* Estilos a la sección Novedad */
+.novedad {
+  margin-top: 3rem; /* Separa esta sección del Header */
+}
+
+/* Cambiar el color de fondo de los botones del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: none;
+  /* Cambia el color de fondo a rojo */
+}
+
+/* Cambiar el color de las flechas de los botones del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  /* Cambia el color de las flechas a blanco */
+}
+
+
+/* Estilo Carrousel / Novedad - fondo a la versión de escritorio */
+.desktop-image {
+  background-color: black;
+  /* Aplica un fondo negro */
+}
+
+/* Estilos para la caption personalizada */
+.custom-caption {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  transform: translateX(312%);
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid black;
+  max-width: 20%;
+  max-height: 25%;
+  text-align: left;
+  display: inline-block;
+}
+
+/* FIN ESTILOS "CARROUSEL / NOVEDAD" */

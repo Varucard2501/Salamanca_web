@@ -1,0 +1,19 @@
+/* ESTILOS OTROS TÍTULOS*/
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    /* Alinea los elementos al inicio del contenedor */
+  }
+  
+  .card-container h2 {
+    width: 100%;
+    /* Asegura que el título ocupe todo el ancho del contenedor */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    margin-bottom: 20px;
+    /* Espacio entre el título y las tarjetas */
+  }
+  

@@ -1,0 +1,23 @@
+// RESET
+@import "base/reset";
+
+// HEADER
+@import "layout/header";
+
+// NOVEDAD CARROUSEL
+@import "layout/novedad";
+
+// VIDEO REVIEW
+@import "layout/video";
+
+// NOTICIAS
+@import "layout/noticias";
+
+// OTROS TÍTULOS
+@import "layout/otros_titulos";
+
+// AL CATÁLOGO
+@import "layout/al_catalogo";
+
+// ESTILOS PÁGINAS //
+@import "pages/pages.scss"
