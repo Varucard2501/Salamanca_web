@@ -1,11 +1,21 @@
 @charset "UTF-8";
+/* PALETA DE COLORES */
+/* Paleta de colores en forma de maps */
+body {
+  background-color: #666666;
+}
+
+/* PALETA DE COLORES */
+/* Paleta de colores en forma de maps */
 * {
   margin: 0;
   border: 0;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
+/* PALETA DE COLORES */
+/* Paleta de colores en forma de maps */
+header {
+  background-color: #666666;
 }
 
 h1 {
