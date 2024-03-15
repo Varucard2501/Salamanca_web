@@ -1,30 +1,45 @@
 @charset "UTF-8";
 /* PALETA DE COLORES */
-/* Paleta de colores en forma de maps */
 body {
-  background-color: #666666;
+  background-color: #8c0005;
 }
 
 /* PALETA DE COLORES */
-/* Paleta de colores en forma de maps */
 * {
   margin: 0;
   border: 0;
 }
 
-/* PALETA DE COLORES */
-/* Paleta de colores en forma de maps */
-header {
-  background-color: #666666;
-}
-
-h1 {
-  font-size: large;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Estilos a la barra NAV / HEADER */
-.navbar navbar-expand-lg bg-body-tertiary fixed-top {
-  margin-bottom: 1rem;
+/* PALETA DE COLORES */
+header h1 {
+  color: #fcf7d1 !important;
+  font-size: 20px !important;
+  font-weight: normal !important;
+}
+
+.navbar {
+  background: linear-gradient(to right, #8c0005, #b52c00) !important;
+}
+
+.navbar-nav .nav-link {
+  color: #fcf7d1;
+  font-size: 16px;
+  margin-right: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #a9a17a;
+}
+.navbar-nav .nav-link.active {
+  color: #a9a17a;
+  font-weight: bold;
 }
 
 /* ESTILOS A CARROUSEL / NOVEDAD */

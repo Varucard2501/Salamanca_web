@@ -1,15 +1,58 @@
-// HEADER - NAV:
+/* Estilos a la barra NAV / HEADER */
+
+//IMPORTS:
 @import "../base/colors";
 
+
+// Estilos generales del header
 header {
-    background-color: $color-grey;
+    
+    h1 {
+        color: $color-white !important;
+        font-size: 20px !important;
+        font-weight: normal !important;
+
+    }
 }
 
-h1 {
-    font-size: large;
+// Aplicar degradé a la barra de navegación
+.navbar {
+    background: linear-gradient(to right, $color-red, $color-orange) !important;
+    
+}
+
+// Estilos para el texto de la lista en la barra de navegación
+.navbar-nav {
+    
+    .nav-link {
+        // Cambiar el color del texto
+        color: $color-white;
+
+        // Cambiar el tamaño de la fuente
+        font-size: 16px;
+
+        // Agregar margen entre los elementos de la lista
+        margin-right: 20px;
+
+        // Cambiar el estilo de fuente (negrita, cursiva, normal, etc.)
+        font-weight: bold;
+
+        // Cambiar la decoración del texto (subrayado, ninguno, etc.)
+        text-decoration: none;
+
+        // Transiciones o animaciones si lo deseas
+        transition: color 0.3s ease;
+
+        // Pseudo-clases si necesitas estilos diferentes para diferentes estados
+        &:hover {
+            color: $color-grey;
+        }
     }
 
-/* Estilos a la barra NAV / HEADER */
-.navbar navbar-expand-lg bg-body-tertiary fixed-top {
-    margin-bottom: 1rem;
-  } 
+    // Estilos para el enlace activo
+    .nav-link.active {
+        // Estilos específicos para el enlace activo
+        color: $color-grey;
+        font-weight: bold;
+    }
+}
