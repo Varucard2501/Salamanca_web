@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* PALETA DE COLORES */
 body {
-  background-color: #8c0005;
+  background-color: rgb(20, 20, 20);
 }
 
 /* PALETA DE COLORES */
@@ -18,12 +18,12 @@ body {
 /* PALETA DE COLORES */
 header h1 {
   color: #fcf7d1 !important;
-  font-size: 20px !important;
-  font-weight: normal !important;
+  font-size: 20px;
+  font-weight: normal;
 }
 
 .navbar {
-  background: linear-gradient(to right, #8c0005, #b52c00) !important;
+  background: linear-gradient(to right, #8c0005, #222121);
 }
 
 .navbar-nav .nav-link {
@@ -53,7 +53,8 @@ header h1 {
 }
 /* Estilos a la sección Novedad */
 .novedad {
-  margin-top: 3rem; /* Separa esta sección del Header */
+  margin-top: 5rem;
+  /* Separa esta sección del Header */
 }
 
 /* Cambiar el color de fondo de los botones del carrusel */
@@ -91,7 +92,48 @@ header h1 {
   display: inline-block;
 }
 
-/* FIN ESTILOS "CARROUSEL / NOVEDAD" */
+/* FIN ESTILOS CARROUSEL */
+/* ESTILOS NOVEDAD */
+.comprar_novedad .card {
+  text-align: center !important;
+  border: 1px solid #ccc !important;
+  border-radius: 5px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  margin: 20px !important;
+}
+.comprar_novedad .card .card-header {
+  background-color: #f8f9fa !important;
+  padding: 10px !important;
+}
+.comprar_novedad .card .card-body {
+  padding: 20px !important;
+}
+.comprar_novedad .card .card-body .card-title {
+  font-size: 24px !important;
+  margin-bottom: 10px !important;
+}
+.comprar_novedad .card .card-body .card-text {
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+}
+.comprar_novedad .card .card-body .btn {
+  margin-top: 20px !important;
+  padding: 10px 20px !important;
+  border: none !important;
+  border-radius: 5px !important;
+  background-color: #007bff !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  transition: background-color 0.3s ease !important;
+}
+.comprar_novedad .card .card-body .btn:hover {
+  background-color: #0056b3 !important;
+}
+.comprar_novedad .card .card-footer {
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
 /* ESTILOS "VIDEO REVIEW */
 .video-container {
   position: relative;
