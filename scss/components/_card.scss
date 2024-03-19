@@ -1,1 +1,53 @@
-// ADAPTAR AL PROYECTO E IMPORTAR
+// TARJETAS ESTILOS:
+@import "../base/colors";
+
+// Estilos para la sección "Otros títulos"
+.otros_titulos {
+    // Estilos generales de la sección
+    background-color: $color-dark;
+    padding: 50px 0;
+
+    // Estilos para el título principal
+    h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    // Estilos para las tarjetas
+    .card {
+        // Estilos generales de la tarjeta
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        // Estilos para la imagen de la tarjeta
+        .card-img-top {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        // Estilos para el cuerpo de la tarjeta
+        .card-body {
+            padding: 20px;
+
+            // Estilos para el título de la tarjeta
+            .card-title {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            // Estilos para el texto de la tarjeta
+            .card-text {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            // Estilos para el botón de la tarjeta
+            .btn {
+                margin-top: 20px;
+                padding: 10px 20px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

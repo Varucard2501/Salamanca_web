@@ -6,53 +6,52 @@
 
 // Estilos generales del header
 header {
-    
     h1 {
         color: $color-white !important;
-        font-size: 20px;
-        font-weight: normal;
+        font-size: 20px !important;
+        font-weight: larger !important;
 
     }
 }
 
 // Aplicar degradé a la barra de navegación
 .navbar {
-    background: linear-gradient(to right, $color-red, $color-dark);
+    background: linear-gradient(to right, $color-red, $color-orange);
     
 }
 
 // Estilos para el texto de la lista en la barra de navegación
 .navbar-nav {
-    
+       
     .nav-link {
         // Cambiar el color del texto
-        color: $color-white;
+        color: $color-white !important;
 
         // Cambiar el tamaño de la fuente
-        font-size: 16px;
+        font-size: 16px !important;
 
         // Agregar margen entre los elementos de la lista
-        margin-right: 20px;
+        margin-right: 20px !important;
 
         // Cambiar el estilo de fuente (negrita, cursiva, normal, etc.)
-        font-weight: bold;
+        font-weight: bold !important;
 
         // Cambiar la decoración del texto (subrayado, ninguno, etc.)
-        text-decoration: none;
+        text-decoration: none !important;
 
         // Transiciones o animaciones si lo deseas
-        transition: color 0.3s ease;
+        transition: color 0.3s ease !important;
 
         // Pseudo-clases si necesitas estilos diferentes para diferentes estados
         &:hover {
-            color: $color-grey;
+            color: $color-grey !important;
         }
     }
 
     // Estilos para el enlace activo
     .nav-link.active {
         // Estilos específicos para el enlace activo
-        color: $color-grey;
-        font-weight: bold;
+        color: $color-grey !important;
+        font-weight: bold !important;
     }
 }

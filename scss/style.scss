@@ -5,12 +5,16 @@
 @import "base/fonts";
 @import "base/mixins";
 @import "base/variables";
+@import "components/boton";
 
 // HEADER
 @import "layout/header";
 
 // NOVEDAD CARROUSEL
 @import "layout/novedad";
+
+// COMPRAR NOVEDAD
+@import "layout/comprar_nov";
 
 // VIDEO REVIEW
 @import "layout/video";
@@ -32,3 +36,6 @@
 
 // ESTILOS PÁGINA: Título 01 //
 @import "pages/titulo";
+
+// BOOTSTRAP LOCAL
+@import "../lib/bootstrap/bootstrap-5.3.3/scss/bootstrap.scss";

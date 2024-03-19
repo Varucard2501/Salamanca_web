@@ -1,9 +1,23 @@
 /* ESTILOS DE NOTICIAS */
+@import "../base/colors";
+
 .noticias {
-    text-align: center;
-    /* Centra el texto horizontalmente */
+  text-align: center;
+  background-color: none !important;
+  /* Centra el texto horizontalmente */
+}
+
+.carousel-item {
+  padding: 20px;
+}
+
+.noticias {
+  h2 {
+    color: $color-white;
   }
-  
-  .carousel-item {
-    padding: 20px;
+
+  .carousel-inner {
+    color: $color-white;
   }
+
+}

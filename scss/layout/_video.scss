@@ -1,18 +1,24 @@
 /* ESTILOS "VIDEO REVIEW */
+  .video_review {
+    padding: 2rem 0 !important; /* Ajusta el espacio entre el borde y el contenido */
+  }
+  
+  .embed-responsive {
+    border: 2px solid $color-red !important; /* Añade un borde */
+    border-radius: 10px !important; /* Redondea las esquinas */
+    overflow: hidden !important; /* Oculta el contenido excedente */
+  }
+  
+  .embed-responsive iframe {
+    height: 100% !important;
+  }
+  
+  .embed-responsive iframe,
+  .embed-responsive embed,
+  .embed-responsive object,
+  .embed-responsive video {
+    width: 100% !important;
+    height: auto !important;
+  }
 
-.video-container {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%; /* Proporción 16:9 para videos */
-  }
-  
-  .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none; /* Elimina el borde del iframe */
-  }
-  
   /* FIN ESTILOS "VIDEO REVIEW */

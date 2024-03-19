@@ -1,16 +1,7 @@
-/* ESTILOS A CARROUSEL / NOVEDAD */
-@media (min-width: 768px) {
-  .carousel-item img {
-    max-height: 80vh;
-    /* Establece la altura máxima al 80% de la altura visible del viewport */
-    object-fit: contain;
-    /* Ajusta el tamaño de la imagen manteniendo su relación de aspecto */
-  }
-}
-
 /* Estilos a la sección Novedad */
+
 .novedad {
-  margin-top: 5rem;
+  margin-top: 3rem;
   /* Separa esta sección del Header */
 }
 
@@ -50,63 +41,16 @@
   display: inline-block;
 }
 
-/* FIN ESTILOS CARROUSEL */
-
-
-/* ESTILOS NOVEDAD */
-
-.comprar_novedad {
-  .card {
-    // Estilos generales de la tarjeta
-    text-align: center !important;
-    border: 1px solid #ccc !important;
-    border-radius: 5px !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
-    margin: 20px !important;
-    
-    .card-header {
-      // Estilos del encabezado de la tarjeta
-      background-color: #f8f9fa !important;
-      padding: 10px !important;
-    }
-    
-    .card-body {
-      // Estilos del cuerpo de la tarjeta
-      padding: 20px !important;
-      
-      .card-title {
-        // Estilos del título de la tarjeta
-        font-size: 24px !important;
-        margin-bottom: 10px !important;
-      }
-      
-      .card-text {
-        // Estilos del texto de la tarjeta
-        font-size: 16px !important;
-        line-height: 1.5 !important;
-      }
-      
-      .btn {
-        // Estilos del botón de la tarjeta
-        margin-top: 20px !important;
-        padding: 10px 20px !important;
-        border: none !important;
-        border-radius: 5px !important;
-        background-color: #007bff !important;
-        color: #fff !important;
-        text-decoration: none !important;
-        transition: background-color 0.3s ease !important;
-
-        &:hover {
-          background-color: #0056b3 !important;
-        }
-      }
-    }
-    
-    .card-footer {
-      // Estilos del pie de la tarjeta
-      background-color: #f8f9fa;
-      padding: 10px;
-    }
+// MEDIA QUERIES:
+/* ESTILOS A CARROUSEL / NOVEDAD */
+@media (min-width: 768px) {
+  .carousel-item img {
+    max-height: 80vh;
+    /* Establece la altura máxima al 80% de la altura visible del viewport */
+    object-fit: contain;
+    /* Ajusta el tamaño de la imagen manteniendo su relación de aspecto */
   }
 }
+
+
+/* FIN ESTILOS CARROUSEL */
