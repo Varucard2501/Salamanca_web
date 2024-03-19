@@ -23,6 +23,11 @@ body {
   /* Cambia el color del borde del botón */
 }
 
+/* PALETA DE COLORES */
+.card-text {
+  background-color: red !important;
+}
+
 /* Estilos a la barra NAV / HEADER */
 /* PALETA DE COLORES */
 header h1, header .h1 {
@@ -32,7 +37,7 @@ header h1, header .h1 {
 }
 
 .navbar {
-  background: linear-gradient(to right, #8c0005, #b52c00);
+  background: linear-gradient(to right, #8c0005, #a9a17a);
 }
 
 .navbar-nav .nav-link {
