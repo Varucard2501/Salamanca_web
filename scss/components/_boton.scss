@@ -4,3 +4,8 @@
   border-color: $color-dark-grey !important;
   /* Cambia el color del borde del botón */
 }
+
+.btn-primary:hover {
+  background-color: $color-orange !important;
+  /* Cambia el color de fondo al pasar el puntero sobre el botón */
+}

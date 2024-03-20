@@ -1,1 +1,22 @@
 // FOOTER
+footer {
+    background: linear-gradient(to right, $color-red, $color-grey);   
+    .container {
+        .row {
+            background-color: none !important;
+            .footer_logo {
+                a {
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+            .footer_copyrights {
+                p {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
