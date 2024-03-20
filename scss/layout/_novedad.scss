@@ -15,14 +15,14 @@
 /* Cambiar el color de las flechas de los botones del carrusel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: black;
+  background-color: $color-black;
   /* Cambia el color de las flechas a blanco */
 }
 
 
 /* Estilo Carrousel / Novedad - fondo a la versión de escritorio */
 .desktop-image {
-  background-color: black;
+  background-color: $color-black;
   /* Aplica un fondo negro */
 }
 
@@ -33,8 +33,8 @@
   transform: translateY(-50%);
   transform: translateX(312%);
   padding: 1rem;
-  background-color: white;
-  border: 1px solid black;
+  background-color: $color-white;
+  border: 1px solid $color-black;
   max-width: 20%;
   max-height: 25%;
   text-align: left;
