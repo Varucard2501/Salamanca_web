@@ -1,6 +1,24 @@
 // TARJETAS ESTILOS:
-@import "../base/colors";
+@mixin border-bradius($border, $border-radius) {
+    border: $border;
+    border-radius: $border-radius;
+}
 
-.card-text {
-    background-color: red !important;
+.card {
+    @include border-bradius($border, $border-radius);
+    box-shadow: 0 6px 6px $color-black !important;
+
+    .card-body {
+        background-color: $color-dark;
+
+        .card-title {
+            color: $color-white !important;
+            font-weight: bold !important;
+        }
+
+        .card-text {
+            background-color: none;
+            color: $color-white !important;
+        }
+    }
 }

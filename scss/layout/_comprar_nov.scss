@@ -6,22 +6,4 @@
     /* Ajusta el espacio entre el borde y el contenido */
 }
 
-.card {
-    border: 2px solid $color-red !important;
-    /* Añade un borde al tarjeta */
-    border-radius: 5px;
-    /* Elimina las esquinas redondeadas */
-    box-shadow: 0 4px 6px $color-black !important;
-    /* Añade una sombra al tarjeta */
-}
-
-.card-title {
-    color: $color-orange !important;
-    /* Cambia el color del título */
-}
-
-.card-text {
-    color: $color-white !important;
-    /* Cambia el color del texto */
-}
 
