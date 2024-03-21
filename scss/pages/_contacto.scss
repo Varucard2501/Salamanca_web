@@ -1,0 +1,88 @@
+/* ------------ ESTILOS PÁGINA: CONTACTO ----------*/
+
+.contacto_main {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.text-center {
+    text-align: center; // Aplica el texto centrado
+    color: $color-white;
+}
+
+.container {
+    .row {
+        display: flex; // Utiliza flexbox para el diseño de la fila
+        flex-wrap: wrap; // Permite que los elementos de la fila se envuelvan si no caben en una sola línea
+        margin-right: -15px; // Corrige el margen derecho negativo de los elementos de la fila
+        margin-left: -15px; // Corrige el margen izquierdo negativo de los elementos de la fila
+
+        .col-md-6 {
+            flex: 0 0 50%; // Establece que cada columna ocupe el 50% del ancho en dispositivos de tamaño medio (tablets)
+            max-width: 50%; // Establece el ancho máximo de las columnas en dispositivos de tamaño medio (tablets)
+            padding-right: 15px; // Añade espacio entre las columnas
+            padding-left: 15px; // Añade espacio entre las columnas
+            box-sizing: border-box; // Asegura que el padding se incluya en el ancho de la columna
+        h3 {
+            color: $color-white;
+        }
+        .mb-3 {
+            .form-label {
+                color: $color-grey;
+            }
+        }
+        }
+
+    }
+
+}
+
+
+
+.my-4 {
+    margin-top: 1.5rem; // Añade espacio superior
+    margin-bottom: 1.5rem; // Añade espacio inferior
+    h2 {
+        color: $color-white;
+    }
+}
+
+.btn { //BOTÓN ENVIAR FORMULARIO
+    &.btn-outline-primary {
+        color: $color-white; // Aplica el color primario como color de texto
+        border-color: $color-orange; // Aplica el color primario como color de borde
+
+        &:hover {
+            background-color: $color-red; // Cambia el color de fondo al pasar el cursor
+            color: $color-white; // Cambia el color de texto al pasar el cursor
+        }
+    }
+}
+
+.form-label {
+    font-weight: bold; // Aplica negrita al texto de la etiqueta del formulario
+}
+
+// REDES SOCIALES:
+
+.row {
+    display: flex;
+    justify-content: center;
+
+    a {
+        margin: 0 10px; // Ajusta el margen entre los enlaces
+        text-decoration: none;
+
+        img {
+            width: 30px; // Ajusta el tamaño de los iconos según sea necesario
+            height: auto; // Permite que la altura se ajuste automáticamente para mantener la proporción
+            transition: transform 0.3s ease; // Agrega una transición suave al hacer hover sobre los iconos
+            background-color: $color-grey;
+            border-radius: 25%;
+
+            &:hover {
+                transform: scale(1.1); // Aumenta ligeramente el tamaño de los iconos al hacer hover
+            }
+        }
+    }
+}
