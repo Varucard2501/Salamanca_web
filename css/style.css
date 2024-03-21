@@ -235,19 +235,6 @@ footer .container .row .footer_copyrights p {
   color: #fcf7d1;
 }
 
-.container .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-.container .row .col-md-6 {
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding-right: 15px;
-  padding-left: 15px;
-  box-sizing: border-box;
-}
 .container .row .col-md-6 h3, .container .row .col-md-6 .h3 {
   color: #fcf7d1;
 }
@@ -280,18 +267,14 @@ footer .container .row .footer_copyrights p {
   display: flex;
   justify-content: center;
 }
-.row a {
-  margin: 0 10px;
-  text-decoration: none;
-}
-.row a img {
+.row a .social_icons {
   width: 30px;
   height: auto;
   transition: transform 0.3s ease;
-  background-color: #a9a17a;
-  border-radius: 25%;
+  background-color: none;
+  border-radius: 1%;
 }
-.row a img:hover {
+.row a .social_icons:hover {
   transform: scale(1.1);
 }
 
