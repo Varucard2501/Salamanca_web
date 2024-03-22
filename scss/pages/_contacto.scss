@@ -1,21 +1,23 @@
 /* ------------ ESTILOS PÁGINA: CONTACTO ----------*/
 
+// Estilos para el contenedor principal
 .contacto_main {
     margin-top: 5rem;
     margin-bottom: 5rem;
-
 }
 
+// Estilos para los elementos de texto centrado
 .text-center {
-    text-align: center; // Aplica el texto centrado
+    text-align: center;
     color: $color-white;
 }
 
+// Estilos para el contenedor de formulario y redes sociales
 .container {
     .row {
-      
+
+        // Estilos para la columna del formulario
         .col-md-6 {
-        
             h3 {
                 color: $color-white;
             }
@@ -25,57 +27,37 @@
                     color: $color-grey;
                 }
             }
+            
         }
-
     }
-
 }
 
-
+// Estilos para los márgenes
 .my-4 {
-    margin-top: 1.5rem; // Añade espacio superior
-    margin-bottom: 1.5rem; // Añade espacio inferior
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 
     h2 {
         color: $color-white;
     }
 }
 
-.btn {
+// Estilos para Botón Enviar ver en _boton.scss
 
-    //BOTÓN ENVIAR FORMULARIO
-    &.btn-outline-primary {
-        color: $color-white; // Aplica el color primario como color de texto
-        border-color: $color-orange; // Aplica el color primario como color de borde
 
-        &:hover {
-            background-color: $color-red; // Cambia el color de fondo al pasar el cursor
-            color: $color-white; // Cambia el color de texto al pasar el cursor
-        }
-    }
-}
-
-.form-label {
-    font-weight: bold; // Aplica negrita al texto de la etiqueta del formulario
-}
-
-// REDES SOCIALES:
-
+// Estilos para las redes sociales
 .row {
     display: flex;
     justify-content: center;
 
     a {
-        
         .social_icons {
-            width: 30px; // Ajusta el tamaño de los iconos según sea necesario
-            height: auto; // Permite que la altura se ajuste automáticamente para mantener la proporción
-            transition: transform 0.3s ease; // Agrega una transición suave al hacer hover sobre los iconos
-            background-color: none;
-            border-radius: 1%;
+            width: 30px;
+            height: auto;
+            transition: transform 0.3s ease;
 
             &:hover {
-                transform: scale(1.1); // Aumenta ligeramente el tamaño de los iconos al hacer hover
+                transform: scale(1.1);
             }
         }
     }

@@ -1,3 +1,5 @@
+// BOTÓN de CATÁLOGO:
+
 .btn-primary {
   background-color: $color-red !important;
   /* Cambia el color de fondo del botón */
@@ -8,4 +10,24 @@
 .btn-primary:hover {
   background-color: $color-orange !important;
   /* Cambia el color de fondo al pasar el puntero sobre el botón */
+}
+
+// BOTÓN ENVIAR CONTACTO:
+.btn {
+  // Estilos para el botón de enviar formulario
+  &.btn-outline-primary {
+      color: $color-white;
+      border-color: $color-orange;
+      &:hover {
+          background-color: $color-red;
+          color: $color-white;
+      }
+  }
+}
+
+// Estilos para el botón de enviar
+.submit {
+  // Mueve el botón al extremo derecho del contenedor
+  @extend .btn; // Hereda estilos de los botones
+  float: right; // Aplica flotado a la derecha
 }
