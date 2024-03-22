@@ -4,37 +4,24 @@
 header {
     h1 {
         color: $color-white !important;
-        font-size: 20px !important;
-        font-weight: larger !important;
-
     }
 }
 
 // Aplicar degradé a la barra de navegación
 .navbar {
     background: linear-gradient(to right, $color-red, $color-grey);
-    
+
 }
 
 // Estilos para el texto de la lista en la barra de navegación
 .navbar-nav {
-       
     .nav-link {
         // Cambiar el color del texto
         color: $color-white !important;
-
-        // Cambiar el tamaño de la fuente
-        font-size: 16px !important;
-
-        // Agregar margen entre los elementos de la lista
-        margin-right: 20px !important;
-
         // Cambiar el estilo de fuente (negrita, cursiva, normal, etc.)
         font-weight: bold !important;
-
         // Cambiar la decoración del texto (subrayado, ninguno, etc.)
         text-decoration: none !important;
-
         // Transiciones o animaciones si lo deseas
         transition: color 0.3s ease !important;
 
@@ -48,6 +35,17 @@ header {
     .nav-link.active {
         // Estilos específicos para el enlace activo
         color: $color-grey !important;
-        font-weight: bold !important;
     }
+}
+
+// NAV BAR TOGGLER:
+
+.navbar-toggler {
+    color: $color-white !important;
+    border: none !important;
+}
+
+.navbar-toggler:hover {
+    color: $color-red;
+    background-color: $color-orange;
 }

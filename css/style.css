@@ -1,7 +1,19 @@
 @charset "UTF-8";
 /* VARIABLES */
 * {
-  font-family: "Arial, Helvetica", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+h2, .h2 {
+  font-size: 32px;
+}
+
+h3, .h3 {
+  font-size: 24px;
+}
+
+h4, .h4 {
+  font-size: 20px;
 }
 
 body {
@@ -9,17 +21,39 @@ body {
 }
 
 /* MEDIA QUERIES  */
+@media (max-width: 767px) {
+  .navbar-nav {
+    flex-direction: row;
+    /* Cambia la dirección de los elementos a fila */
+    gap: 1rem;
+    /* Espacio entre elementos */
+  }
+  .nav-item {
+    width: auto;
+    /* Restaura el ancho automático de los elementos */
+  }
+  .navbar-brand {
+    margin-right: auto;
+    /* Mueve el logo al extremo izquierdo */
+  }
+  .navbar-collapse {
+    max-width: 60%;
+  }
+}
 /* Para dispositivos de escritorio */
 @media (min-width: 768px) {
   .comprar_novedad {
-    max-width: 40%; /* Limita el ancho máximo al 50% del contenedor padre */
-    margin: auto; /* Centra horizontalmente la tarjeta */
+    max-width: 40%;
+    /* Limita el ancho máximo al 50% del contenedor padre */
+    margin: auto;
+    /* Centra horizontalmente la tarjeta */
   }
 }
 /* Para dispositivos móviles */
 @media (max-width: 767px) {
   .comprar_novedad {
-    width: 100%; /* Ocupa todo el ancho disponible */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
   }
 }
 * {
@@ -29,7 +63,19 @@ body {
 
 /* VARIABLES */
 * {
-  font-family: "Arial, Helvetica", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+h2, .h2 {
+  font-size: 32px;
+}
+
+h3, .h3 {
+  font-size: 24px;
+}
+
+h4, .h4 {
+  font-size: 20px;
 }
 
 .btn-primary {
@@ -77,8 +123,6 @@ body {
 /* Estilos a la barra NAV / HEADER */
 header h1, header .h1 {
   color: #fcf7d1 !important;
-  font-size: 20px !important;
-  font-weight: larger !important;
 }
 
 .navbar {
@@ -87,8 +131,6 @@ header h1, header .h1 {
 
 .navbar-nav .nav-link {
   color: #fcf7d1 !important;
-  font-size: 16px !important;
-  margin-right: 20px !important;
   font-weight: bold !important;
   text-decoration: none !important;
   transition: color 0.3s ease !important;
@@ -98,7 +140,16 @@ header h1, header .h1 {
 }
 .navbar-nav .nav-link.active {
   color: #a9a17a !important;
-  font-weight: bold !important;
+}
+
+.navbar-toggler {
+  color: #fcf7d1 !important;
+  border: none !important;
+}
+
+.navbar-toggler:hover {
+  color: #8c0005;
+  background-color: #b52c00;
 }
 
 /* Estilos a la sección Novedad */

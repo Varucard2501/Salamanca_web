@@ -28,6 +28,9 @@
     <!-- Fuentes Web -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
 
+    <!-- Animate.Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
@@ -39,30 +42,34 @@
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
                     <img src="../images/logo_70px.png" alt="Logo" width="30" height="30"
-                        class="d-inline-block align-text-top">
+                        class="d-inline-block align-text-top me-2">
+                    <!-- Añade la clase "d-inline-block" y "me-2" -->
                 </a>
                 <!-- Título -->
-                <h1 class="navbar-brand">Salamanca Cómics</h1>
+                <h1 class="navbar-brand animate__animated animate__pulse mb-0">Salamanca Cómics</h1>
+                <!-- Añade la clase "mb-0" para eliminar el margen inferior -->
                 <!-- Botón de alternancia para dispositivos móviles -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+                </button>
+
                 </button>
                 <!-- Contenido del menú de navegación -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav flex-grow-1"> <!-- Utiliza flex-grow-1 -->
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link active" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="catalogo.html">Catálogo</a>
+                            <a class="nav-link active" href="catalogo.html">Catálogo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="quienes_somos.html">¿Quiénes somos?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -73,33 +80,33 @@
 
     <!-- Main -->
     <main class="contacto_main">
-        <h2 class="text-center">Contacto:</h2> <!-- Título main --> 
-    
+        <h2 class="text-center">Contacto:</h2> <!-- Título main -->
+
         <div class="container">
-            <div class="row">  
+            <div class="row">
                 <div class="col-md-6 my-4">
-                    <h3>Envianos un mensaje:</h3> <!-- Título Formulario --> 
-    
+                    <h3>Envianos un mensaje:</h3> <!-- Título Formulario -->
+
                     <form> <!-- Contenedor formulario de contacto -->
                         <div class="mb-3">
                             <label for="fullname" class="form-label">Nombre completo:</label>
                             <input type="text" class="form-control" id="fullname" name="fullname">
                         </div>
-    
+
                         <div class="mb-3">
                             <label for="email" class="form-label">E-mail:</label>
                             <input type="email" class="form-control" id="email" name="email">
                         </div>
-    
+
                         <div class="mb-3">
                             <label for="message" class="form-label">Mensaje:</label>
                             <textarea class="form-control" id="message" name="message" rows="4"></textarea>
                         </div>
-    
+
                         <button type="submit" class="btn submit btn-primary">Enviar</button>
                     </form>
                 </div>
-    
+
                 <div class="col-md-6 my-4"> <!-- Contenedor redes sociales -->
                     <h3 class="text-center">Seguinos en redes:</h3> <!-- Título redes sociales -->
                     <div class="d-flex justify-content-center flex-wrap">
@@ -120,8 +127,8 @@
             </div>
         </div>
     </main>
-    
-    
+
+
     <!-- "Footer"-->
     <footer>
         <div class="container py-4">

@@ -1,18 +1,47 @@
 /* MEDIA QUERIES  */
 
+@media (max-width: 767px) {
+    .navbar-nav {
+        flex-direction: row;
+        /* Cambia la dirección de los elementos a fila */
+        gap: 1rem;
+        /* Espacio entre elementos */
+    }
+
+    .nav-item {
+        width: auto;
+        /* Restaura el ancho automático de los elementos */
+    }
+
+    .navbar-brand {
+        margin-right: auto;
+        /* Mueve el logo al extremo izquierdo */
+    }
+
+    .navbar-collapse {
+        max-width: 60%;
+
+    }
+}
+
+
+
 //Para la clase .COMPRAR NOVEDAD
 
 /* Para dispositivos de escritorio */
 @media (min-width: 768px) {
     .comprar_novedad {
-        max-width: 40%; /* Limita el ancho máximo al 50% del contenedor padre */
-        margin: auto; /* Centra horizontalmente la tarjeta */
+        max-width: 40%;
+        /* Limita el ancho máximo al 50% del contenedor padre */
+        margin: auto;
+        /* Centra horizontalmente la tarjeta */
     }
 }
 
 /* Para dispositivos móviles */
 @media (max-width: 767px) {
     .comprar_novedad {
-        width: 100%; /* Ocupa todo el ancho disponible */
+        width: 100%;
+        /* Ocupa todo el ancho disponible */
     }
 }

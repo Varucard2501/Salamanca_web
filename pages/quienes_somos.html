@@ -12,7 +12,7 @@
         content="Cómic o historietas de autor, historietas de argentina, relatos sobrenaturales, terror, policial, folclore, mitos.">
     <!-- Fav Ico -->
     <link rel="shortcut icon" href="../images/logo_70px.png" type="image/x-icon">
-        <!-- Título -->
+    <!-- Título -->
     <title>¿Quiénes somos?</title>
 
     <!-- Estilos Bootstrap online-->
@@ -28,6 +28,9 @@
     <!-- Fuentes Web -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
 
+    <!-- Animate.Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
@@ -39,24 +42,28 @@
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
                     <img src="../images/logo_70px.png" alt="Logo" width="30" height="30"
-                        class="d-inline-block align-text-top">
+                        class="d-inline-block align-text-top me-2">
+                    <!-- Añade la clase "d-inline-block" y "me-2" -->
                 </a>
                 <!-- Título -->
-                <h1 class="navbar-brand">Salamanca Cómics</h1>
+                <h1 class="navbar-brand animate__animated animate__pulse mb-0">Salamanca Cómics</h1>
+                <!-- Añade la clase "mb-0" para eliminar el margen inferior -->
                 <!-- Botón de alternancia para dispositivos móviles -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+                </button>
+
                 </button>
                 <!-- Contenido del menú de navegación -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav flex-grow-1"> <!-- Utiliza flex-grow-1 -->
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link active" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="catalogo.html">Catálogo</a>
+                            <a class="nav-link active" href="catalogo.html">Catálogo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">¿Quiénes somos?</a>
@@ -118,14 +125,15 @@
                         <div class="contenedor_individual">
                             <img src="../images/00quienes_somos/pablito.jpg" alt="Pablo Lizalde" class="img-fluid">
                             <h4>Pablo Lizalde</h4>
-                            <p>Marketing y Eventos. Animal social y comercial. Lo suyo es la venta "cara a cara".</p>
+                            <p>Marketing y Eventos. Animal social. Lo suyo es la venta "cara a cara".</p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="contenedor_individual">
                             <img src="../images/00quienes_somos/IMG_2984.jpg" alt="Tati Fontana" class="img-fluid">
                             <h4>Tati Fontana</h4>
-                            <p>Editora responsable. Alma máter de Salamanca Cómics, pone a todos a laburar contentos.</p>
+                            <p>Editora responsable. Alma máter de Salamanca Cómics, pone a todos a laburar contentos.
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -138,10 +146,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="contenedor_individual">
-                            <img src="../images/00quienes_somos/chiqui.jpg" alt="Agustín Rodríguez" class="img-fluid">
-                            <h4>Agustín Rodríguez</h4>
-                            <p>Dirección Artística. Poseedor de una pluma talentosa, amante de la fiesta y la cultura
-                                flamenca.
+                            <img src="../images/00quienes_somos/roberto.jpg" alt="Roberto Fontana" class="img-fluid">
+                            <h4>Roberto Fontana</h4>
+                            <p>Dirección Artística. Profesor de dibujo y pintura. Poseedor de una trazo poderoso.
                             </p>
                         </div>
                     </div>
@@ -152,7 +159,7 @@
     <!-- Fin del "Main"-->
 
     <!-- "Footer"-->
-    <footer class="bg-body-tertiary text-dark">
+    <footer>
         <div class="container py-4">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md-6">

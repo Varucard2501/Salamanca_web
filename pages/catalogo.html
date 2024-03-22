@@ -28,6 +28,9 @@
     <!-- Fuentes Web -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
 
+    <!-- Animate.Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- Animation on screen -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -41,24 +44,28 @@
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
                     <img src="../images/logo_70px.png" alt="Logo" width="30" height="30"
-                        class="d-inline-block align-text-top">
+                        class="d-inline-block align-text-top me-2">
+                    <!-- Añade la clase "d-inline-block" y "me-2" -->
                 </a>
                 <!-- Título -->
-                <h1 class="navbar-brand">Salamanca Cómics</h1>
+                <h1 class="navbar-brand animate__animated animate__pulse mb-0">Salamanca Cómics</h1>
+                <!-- Añade la clase "mb-0" para eliminar el margen inferior -->
                 <!-- Botón de alternancia para dispositivos móviles -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+                </button>
+
                 </button>
                 <!-- Contenido del menú de navegación -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav flex-grow-1"> <!-- Utiliza flex-grow-1 -->
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link active" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Catálogo</a>
+                            <a class="nav-link active" href="#">Catálogo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="quienes_somos.html">¿Quiénes somos?</a>
@@ -156,8 +163,10 @@
                                 alt="El Cuarto Hijo">
                             <div class="card-body d-flex flex-column justify-content-center align-items-center">
                                 <h4 class="card-title">El Cuarto Hijo</h4>
-                                <p class="card-text">Es invierno y con él llega <b>Drimus</b>, el cuarto hijo de la casa noble de <b>Iganio</b>; un horrible y 
-                                    desgraciado monstruo. Rechazado y condenado al olvido, la criatura es entregada al sabio <b>Brem</b> quien lo
+                                <p class="card-text">Es invierno y con él llega <b>Drimus</b>, el cuarto hijo de la casa
+                                    noble de <b>Iganio</b>; un horrible y
+                                    desgraciado monstruo. Rechazado y condenado al olvido, la criatura es entregada al
+                                    sabio <b>Brem</b> quien lo
                                     iniciará en los misterios de <b>Misaianes</b>, el <b>"Hijo de la Muerte"</b>.
                                 </p>
                                 <a href="titulo_01.html" class="btn btn-primary">¡Comprar ahora!</a>
