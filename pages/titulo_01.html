@@ -28,6 +28,12 @@
     <!-- Fuentes Web -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
 
+    <!-- Animate.Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Animation on screen -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 </head>
 
@@ -35,7 +41,7 @@
 
     <!-- "Header / Barra de navegación" -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
@@ -75,7 +81,7 @@
     <!-- Main / Título y Descripción del libro -->
 
     <main class="titulo_main">
-        <h2>El Cuarto Hijo</h2>
+        <h2>El Cuarto Hijo:</h2> <!-- Título del Main -->
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-2 col-md-4 col-sm-6">
@@ -111,7 +117,7 @@
             </div>
         </div>
 
-        <div id="myModal" class="modal">
+        <div id="myModal" class="modal"> <!-- Modal -->
             <span class="close" onclick="closeModal()">&times;</span>
             <img class="modal-content" id="img01" alt="modal">
         </div>
@@ -137,16 +143,16 @@
                     enviado a conquistar y someter a los pueblos de los <b>Confines</b>.
                 </p>
                 <ul class="list">
-                    <li>Autores: Lerena (guion) - Fontana (arte).</li>
-                    <li>Texto original: Liliana Bodoc.</li>
-                    <li>Edición: Libro digital.</li>
-                    <li>Cantidad de páginas: 50.</li>
-                    <li>Color: Blanco y negro.</li>
-                    <li>Temáticas: Horror, Medieval, Sobrenatural.</li>
+                    <li>Autores: <b>Lerena</b> (guion) - <b>Fontana</b> (arte).</li>
+                    <li>Texto original: <b>Liliana Bodoc</b>.</li>
+                    <li>Edición: <b>Digital</b> (PDF).</li>
+                    <li>Cantidad de páginas: <b>50</b>.</li>
+                    <li>Color: <b>Blanco y negro</b>.</li>
+                    <li>Temáticas: <b>Horror, Histórico</b>.</li>
                 </ul>
                 <a href="javascript:void(0)" class="btn btn-primary">¡Comprar ahora!</a>
             </div>
-            <div class="card-footer text-body-secondary">
+            <div class="card-footer">
                 ¡Éxito mundial!
             </div>
         </div>
@@ -161,13 +167,13 @@
             <div class="row">
                 <!-- Tarjeta 1 -->
                 <div class="col-md-3">
-                    <div class="card mb-3">
+                    <div class="card mb-3" data-aos="flip-left">
                         <img src="../images/dagon/dagon_cover.jpg" class="card-img-top" alt="Dagón tapa">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <h4 class="card-title">Dagón</h4>
                             <p class="card-text">Con la muerte de su padre, <b>Adriana</b> comienza a trabajar en una
                                 planta de
-                                pescado para mantener a su familia. Acuciada por situaciones de violencia y abuso,
+                                pescado para mantener a su familia. Acuciada por situaciones de violencia,
                                 <b>Adriana</b> buscará respuestas
                                 en el culto a <b>Dagón</b>, <b>"el señor del abismo"</b>
                             </p>
@@ -178,7 +184,7 @@
 
                 <!-- Tarjeta 2 -->
                 <div class="col-md-3">
-                    <div class="card mb-3">
+                    <div class="card mb-3" data-aos="flip-left">
                         <img src="../images/dejame_entrar/dejame_cover.jpg" class="card-img-top"
                             alt="Dejame Entrar tapa">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -195,7 +201,7 @@
 
                 <!-- Tarjeta 3 -->
                 <div class="col-md-3">
-                    <div class="card mb-3">
+                    <div class="card mb-3" data-aos="flip-left">
                         <img src="../images/laburantes/laburantes_cover.jpg" class="card-img-top" alt="Laburantes tapa">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <h4 class="card-title">laburantes</h4>
@@ -211,7 +217,7 @@
 
                 <!-- Tarjeta 4 -->
                 <div class="col-md-3">
-                    <div class="card mb-3">
+                    <div class="card mb-3" data-aos="flip-left">
                         <img src="../images/mujeres_fuego/m_d_f_cuadrado.jpg" class="card-img-top"
                             alt="Mujeres de fuego tapas">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -269,6 +275,11 @@
     <!-- Script Bootstrap LOCAL-->
     <script src="../lib/bootstrap/bootstrap-5.3.3/dist/js/bootstrap.min.js"></script>
 
+    <!-- Script Animation on screen -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

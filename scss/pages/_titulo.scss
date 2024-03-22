@@ -4,20 +4,39 @@
     margin-top: 5rem;
     margin-bottom: 5rem;
     margin-left: 3rem;
+
+    h2 {
+        color: $color-white;
+    }
 }
 
 // ESTILO TEXTO SECCIÓN "
 .comprar_novedad {
-    ul {
-        list-style: none;
+    .card-header {
+        background-color: $color-dark !important;
+        color: $color-white;
+    }
+
+    .card-body {
+        background-color: none;
+
+        .card-text {
+            background-color: none;
+        }
+
+        ul {
+            list-style: none;
+            color: $color-white;
+        }
+    }
+    .card-footer {
+        background-color: $color-dark;
+        color: $color-white;
     }
 }
 
 
-
-
 // CONTENEDOR GALERÍA:
-
 .container-gallery {
     width: 100%;
     -webkit-transform-style: preserve-3d;
@@ -134,8 +153,8 @@
     /* Ajusta la distancia superior según sea necesario */
     right: 50%;
     /* Ajusta la distancia derecha según sea necesario */
-    color: grey;
-    font-size: 30px;
+    color: $color-orange;
+    font-size: 50px;
     font-weight: bold;
     transition: 0.3s;
     cursor: pointer;
@@ -149,3 +168,5 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+// Ver media Queries .comprar_novedad en base/media

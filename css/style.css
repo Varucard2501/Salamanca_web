@@ -8,6 +8,20 @@ body {
   background-color: rgb(20, 20, 20) !important;
 }
 
+/* MEDIA QUERIES  */
+/* Para dispositivos de escritorio */
+@media (min-width: 768px) {
+  .comprar_novedad {
+    max-width: 40%; /* Limita el ancho máximo al 50% del contenedor padre */
+    margin: auto; /* Centra horizontalmente la tarjeta */
+  }
+}
+/* Para dispositivos móviles */
+@media (max-width: 767px) {
+  .comprar_novedad {
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+}
 * {
   margin: 0;
   border: 0;
@@ -282,6 +296,7 @@ footer .container .row .footer_copyrights p {
 }
 .que_es h2, .que_es .h2 {
   color: #fcf7d1;
+  padding-left: 3.5%;
 }
 .que_es .container {
   margin-left: auto;
@@ -292,8 +307,8 @@ footer .container .row .footer_copyrights p {
 }
 .que_es .container .row .col-md-6 .texto p {
   color: #fcf7d1;
-  font-size: 16px;
   line-height: 1.5;
+  padding: 5%;
 }
 .que_es .container .row .col-md-6 .img_quienes_somos {
   text-align: center;
@@ -301,6 +316,7 @@ footer .container .row .footer_copyrights p {
 .que_es .container .row .col-md-6 .img_quienes_somos img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 .que_es_main {
@@ -328,11 +344,10 @@ footer .container .row .footer_copyrights p {
 .quienes_somos .container .row .col-md-3 .contenedor_individual img {
   max-width: 100%;
   height: auto;
-  border-radius: 12.5%;
+  border-radius: 10px;
 }
 .quienes_somos .container .row .col-md-3 .contenedor_individual h4, .quienes_somos .container .row .col-md-3 .contenedor_individual .h4 {
   color: #fcf7d1;
-  font-size: 24px;
   margin-top: 15px;
   margin-bottom: 10px;
 }
@@ -348,9 +363,27 @@ footer .container .row .footer_copyrights p {
   margin-bottom: 5rem;
   margin-left: 3rem;
 }
+.titulo_main h2, .titulo_main .h2 {
+  color: #fcf7d1;
+}
 
-.comprar_novedad ul {
+.comprar_novedad .card-header {
+  background-color: #222121 !important;
+  color: #fcf7d1;
+}
+.comprar_novedad .card-body {
+  background-color: none;
+}
+.comprar_novedad .card-body .card-text {
+  background-color: none;
+}
+.comprar_novedad .card-body ul {
   list-style: none;
+  color: #fcf7d1;
+}
+.comprar_novedad .card-footer {
+  background-color: #222121;
+  color: #fcf7d1;
 }
 
 .container-gallery {
@@ -467,8 +500,8 @@ footer .container .row .footer_copyrights p {
   /* Ajusta la distancia superior según sea necesario */
   right: 50%;
   /* Ajusta la distancia derecha según sea necesario */
-  color: grey;
-  font-size: 30px;
+  color: #b52c00;
+  font-size: 50px;
   font-weight: bold;
   transition: 0.3s;
   cursor: pointer;
