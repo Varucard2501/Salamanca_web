@@ -1,5 +1,5 @@
 *.json
 node_modules/
 css/copy.css
-lib/
-!lib/bootstrap.min.js
+lib/*
+!lib/bootstrap/bootstrap-5.3.3/dist/js/bootstrap.min.js
