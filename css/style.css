@@ -444,6 +444,10 @@ footer .container .row .footer_copyrights p {
   color: #fcf7d1;
 }
 
+.container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+  align-content: center;
+}
+
 .container-gallery {
   width: 100%;
   -webkit-transform-style: preserve-3d;

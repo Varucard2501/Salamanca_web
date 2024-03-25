@@ -29,9 +29,10 @@
             color: $color-white;
             text-align: center;
             padding-right: 15%;
-            
+
         }
     }
+
     .card-footer {
         background-color: $color-dark;
         color: $color-white;
@@ -40,6 +41,10 @@
 
 
 // CONTENEDOR GALERÍA:
+.container-fluid {
+    align-content: center;
+}
+
 .container-gallery {
     width: 100%;
     -webkit-transform-style: preserve-3d;
