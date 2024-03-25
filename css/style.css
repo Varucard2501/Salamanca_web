@@ -115,9 +115,14 @@ h4, .h4 {
   color: #fcf7d1 !important;
   font-weight: bold !important;
 }
-.card .card-body .card-text {
-  background-color: none;
+.card .card-body h5.card-title, .card .card-body .card-title.h5 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+.card .card-body p.card-text {
   color: #fcf7d1 !important;
+  text-align: justify !important;
+  padding: 5%;
 }
 
 /* Estilos a la barra NAV / HEADER */
@@ -431,6 +436,8 @@ footer .container .row .footer_copyrights p {
 .comprar_novedad .card-body ul {
   list-style: none;
   color: #fcf7d1;
+  text-align: center;
+  padding-right: 15%;
 }
 .comprar_novedad .card-footer {
   background-color: #222121;

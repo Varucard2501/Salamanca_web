@@ -16,9 +16,16 @@
             font-weight: bold !important;
         }
 
-        .card-text {
-            background-color: none;
-            color: $color-white !important;
+        h5.card-title {
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem; // Tamaño del título
         }
+
+        p.card-text {
+            color: $color-white !important;
+            text-align: justify !important;
+            padding: 5%;
+        }
+
     }
 }
