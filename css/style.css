@@ -208,21 +208,24 @@ header h1, header .h1 {
   }
 }
 /* FIN ESTILOS CARROUSEL */
-/* .comprar_novedad {
-    .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: max-content;
-        margin: 0 auto;
-        background-color: none;
-
-    }
-
-} */
 /* ESTILOS "VIDEO REVIEW */
 .video_review {
   padding: 2rem 0 !important; /* Ajusta el espacio entre el borde y el contenido */
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Proporción de pantalla 16:9 */
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .embed-responsive {

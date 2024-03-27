@@ -2,7 +2,24 @@
   .video_review {
     padding: 2rem 0 !important; /* Ajusta el espacio entre el borde y el contenido */
   }
-  
+
+// DESKTOP:
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporción de pantalla 16:9 */
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+// RESPONSIVE:  
   .embed-responsive {
     border: 2px solid $color-red !important; /* Añade un borde */
     border-radius: 10px !important; /* Redondea las esquinas */
